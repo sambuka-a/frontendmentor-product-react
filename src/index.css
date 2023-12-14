@@ -289,7 +289,7 @@ align-items: center;
   align-items: center;
 }
 
-.product-price span {
+.item-price-discount {
   display: flex;
   align-items: center;
   gap: 1rem;

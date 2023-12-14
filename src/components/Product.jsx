@@ -20,25 +20,27 @@ const Product = ({ handleCount, handleInputChange, itemsCount, handleCart }) => 
       <p className="product-company-details">Sneaker Company</p>
       <p className="product-title">{product.title}</p>
       <p className="product-description">{product.descr}</p>
-      <section className="product-price">
-        <span>
+      <div className="product-price">
+        <div className="item-price-discount">
           <p className="item-price">{`$ ${product.calculatePrice()}`}</p>
           <p className="item-discount">{`${product.discountRate * 100}%`}</p>
-        </span>
+        </div>
         <p className="item-regular-price">{`$ ${product.regPrice}.00`}</p>
-      </section>
+      </div>
       <section className="product-controls">
         <Button type="count" onClick={() => handleCount('decr')}>
           <img src={minusImage} alt="decrease image" />
         </Button>
+
         <input
-          className=""
+          aria-label="quantity"
           onChange={handleInputChange}
           type="number"
           value={itemsCount}
           min={0}
           max={99}
         />
+
         <Button type="count" onClick={() => handleCount('incr')}>
           <img src={plusImage} alt="increase image" />
         </Button>
