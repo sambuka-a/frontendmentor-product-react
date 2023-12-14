@@ -29,7 +29,7 @@ const Product = ({ handleCount, handleInputChange, itemsCount, handleCart }) => 
       </section>
       <section className="product-controls">
         <Button type="count" onClick={() => handleCount('decr')}>
-          <img src={minusImage} />
+          <img src={minusImage} alt="decrease image" />
         </Button>
         <input
           className=""
@@ -40,12 +40,12 @@ const Product = ({ handleCount, handleInputChange, itemsCount, handleCart }) => 
           max={99}
         />
         <Button type="count" onClick={() => handleCount('incr')}>
-          <img src={plusImage} />
+          <img src={plusImage} alt="increase image" />
         </Button>
       </section>
       <Button type="add" onClick={() => handleCart(product)}>
         <span className="add-to-cart-btn">
-          <CartIcon className="product-cart-icon" /> Add To Cart
+          <CartIcon className="product-cart-icon" aria-label="cart image" /> Add To Cart
         </span>
       </Button>
     </div>

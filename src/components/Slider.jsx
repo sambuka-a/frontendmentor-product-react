@@ -21,18 +21,26 @@ const Slider = () => {
     {
       original: productImage1,
       thumbnail: productImage1Thumb,
+      originalAlt: productImage1,
+      thumbnailAlt: productImage1Thumb,
     },
     {
       original: productImage2,
       thumbnail: productImage2Thumb,
+      originalAlt: productImage1,
+      thumbnailAlt: productImage1Thumb,
     },
     {
       original: productImage3,
       thumbnail: productImage3Thumb,
+      originalAlt: productImage1,
+      thumbnailAlt: productImage1Thumb,
     },
     {
       original: productImage4,
       thumbnail: productImage4Thumb,
+      originalAlt: productImage1,
+      thumbnailAlt: productImage1Thumb,
     },
   ];
 

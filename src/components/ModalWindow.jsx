@@ -37,7 +37,7 @@ const ModalWindow = ({ modalIsOpen, closeModal, cart, resetCart }) => {
           <section className="cart-content">
             <h2>Cart</h2>
             <section className="cart-details">
-              <img src={productImage1Thumb} />
+              <img src={productImage1Thumb} alt="product image thumb" />
               <div className="cart-total">
                 <p>{cart.title}</p>
                 <section>
@@ -45,7 +45,7 @@ const ModalWindow = ({ modalIsOpen, closeModal, cart, resetCart }) => {
                   <span>{`$${cart.calculatePrice() * cart.count}`}</span>
                 </section>
               </div>
-              <IconDelete onClick={resetCart} />
+              <IconDelete onClick={resetCart} aria-label="delete button icon" />
             </section>
             <Button onClick={closeModal}>Checkout</Button>
           </section>

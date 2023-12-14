@@ -7,15 +7,19 @@ const MainNav = ({ isDesctopOrMobile }) => {
     <>
       {isDesctopOrMobile ? (
         <Menu>
-          {nav.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
+          <ul>
+            {nav.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </Menu>
       ) : (
         <nav className="desktop-nav">
-          {nav.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
+          <ul>
+            {nav.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </nav>
       )}
     </>

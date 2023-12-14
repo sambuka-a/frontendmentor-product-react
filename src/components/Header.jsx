@@ -8,7 +8,7 @@ import MainNav from './MainNav.jsx';
 
 const Header = ({ isDesktopOrMobile, openModal, cart }) => {
   return (
-    <div className="container header-container">
+    <div className="header-container">
       {isDesktopOrMobile ? (
         <>
           <MainNav isDesctopOrMobile={isDesktopOrMobile} />
